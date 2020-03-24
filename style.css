@@ -49,7 +49,7 @@
 #why .row img {
   background-color:#428bca;
   border-radius:50%;
-  padding:30px
+  padding:30px;
 }
 
 /* COMMON */
@@ -64,4 +64,28 @@ img{
 
 .clear {
   clear:both;
+}
+
+
+@media screen and (max-width: 420px) {
+    .row {
+        width: 100%;
+    }
+
+    #lezioni .row > .left, #lezioni .row > .right, #steps .row > .left, #steps .row > .central,
+    #steps .row > .right  {
+        width: 100%;
+        float: none;
+    }
+
+    .container .grey {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    img {
+        width: 50%;
+        height: 50%;
+    }
 }
